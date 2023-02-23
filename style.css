@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --light-color: #F5F5F5;
+    --low-priority: #848191;
+    --primary-colour: #7562E0;
+    --secondary-colour: #282162;
+    --dark-bg-colour: #000036;
+    --dark-bg: #181824;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--dark-bg);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0;
+}
+
+.navbar .nav-elements {
+    display: flex;
+    align-items: center;
+}
+
+#logo h1 {
+    color: var(--primary-colour);
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.navbar .nav-elements li {
+    list-style: none;
+}
+
+.nav-elements a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-elements li:first-child a {
+    color: var(--primary-colour);
+}
+
+.nav-elements li:not(:first-child) a {
+    color: var(--white);
+}
+
+.nav-elements li {
+    margin-left: 52px;
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-color: #1A1A29;
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+}
+
+.hero-content,
+.hero-image {
+    flex-basis: 50%;
+    color: var(--white);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h3 {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--white);
+}
+
+.hero-content h2 {
+    font-weight: 600;
+    font-size: 52px;
+    color: var(--white);
+    margin-top: 6px;
+}
+
+.hero-content p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--white);
+    margin-top: 12px;
+}
+
+.hero-content ul {
+    display: flex;
+    margin-top: 29px;
+}
+
+.hero-content ul li {
+    list-style: none;
+}
+
+.hero-content ul li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-colour);
+    padding: 12px 25px;
+    margin-right: 32px;
+    border-radius: 5px;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.hero-content ul li a:hover {
+    background-color: transparent;
+    border: 2px solid var(--primary-colour);
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
