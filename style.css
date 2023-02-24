@@ -13,7 +13,7 @@
     --low-priority: #848191;
     --primary-colour: #7562E0;
     --secondary-colour: #282162;
-    --dark-bg-colour: #000036;
+    --dark-bg-colour: #1A1A29;
     --dark-bg: #181824;
 }
 
@@ -68,7 +68,7 @@
 /* Hero Section */
 
 .hero-section {
-    background-color: #1A1A29;
+    background-color: var(--dark-bg-colour);
 }
 
 .hero-container {
@@ -118,15 +118,18 @@
 }
 
 .hero-content ul li a {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     background-color: var(--primary-colour);
     padding: 12px 25px;
-    margin-right: 32px;
     border-radius: 5px;
     color: #F5F5F5;
     font-weight: 600;
     font-size: 16px;
+}
+
+.hero-content ul li:nth-child(1) a {
+    margin-right: 32px;
 }
 
 .hero-content ul li a:hover {
@@ -137,4 +140,81 @@
 .hero-image {
     display: flex;
     justify-content: center;
+}
+
+/* About Section */
+
+.about-section {
+    background-color: var(--dark-bg-colour);
+    color: #F5F5F5;
+    padding: 25px 0;
+}
+
+.about-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-contents > h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--primary-colour);
+}
+
+.about-contents p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--light-color);
+    text-align: center;
+    margin-top: 8px;
+}
+
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 25px;
+}
+.skill-data {
+    margin: 15px 0;
+}
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar {
+    background-color: var(--light-color);
+    
+}
+
+.skill-bar, .skill-percentage {
+    height: 5px;
+    border-radius: 4px;
+}
+
+.skill-html {
+    display: block;
+    width: 90%;
+    background-color: var(--primary-colour);
+}
+
+.skill-css {
+    display: block;
+    width: 80%;
+    background-color: var(--primary-colour);
+}
+
+.skill-js {
+    display: block;
+    width: 60%;
+    background-color: var(--primary-colour);
+}
+
+.skill-bs {
+    display: block;
+    width: 70%;
+    background-color: var(--primary-colour);
 }
