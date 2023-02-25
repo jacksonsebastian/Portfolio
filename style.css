@@ -10,7 +10,7 @@
 :root {
     --white: #ffffff;
     --light-color: #F5F5F5;
-    --low-priority: #848191;
+    --low-priority: #31313F;
     --primary-colour: #7562E0;
     --secondary-colour: #282162;
     --dark-bg-colour: #1A1A29;
@@ -155,7 +155,8 @@
     flex-direction: column;
     align-items: center;
 }
-.about-contents > h2 {
+
+.about-contents>h2 {
     text-align: center;
     font-weight: 600;
     font-size: 32px;
@@ -177,9 +178,11 @@
     width: 70%;
     margin-top: 25px;
 }
+
 .skill-data {
     margin: 15px 0;
 }
+
 .skill-name {
     display: flex;
     justify-content: space-between;
@@ -187,10 +190,11 @@
 
 .skill-bar {
     background-color: var(--light-color);
-    
+
 }
 
-.skill-bar, .skill-percentage {
+.skill-bar,
+.skill-percentage {
     height: 5px;
     border-radius: 4px;
 }
@@ -217,4 +221,208 @@
     display: block;
     width: 70%;
     background-color: var(--primary-colour);
+}
+
+/* Project Section Start */
+
+.project-section {
+    background-color: var(--dark-bg-colour);
+    padding: 25px 0;
+}
+
+.project-headline h2 {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--primary-colour);
+}
+
+.project-headline p {
+    max-width: 90%;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--light-color);
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+.project-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 30%;
+    background-color: var(--low-priority);
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 36px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--primary-colour);
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--light-color);
+    margin-bottom: 24px;
+}
+
+.card ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card ul li {
+    list-style: none;
+}
+
+.card ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: var(--primary-colour);
+    border-radius: 5px;
+    color: var(--light-color);
+}
+
+.card ul li a:hover {
+    background: transparent;
+    border: 1px solid var(--light-color);
+}
+
+/* Contact me section start */
+
+.contact-section {
+    background-color: var(--dark-bg-colour);
+    padding: 100px 0;
+}
+
+.contact-me {
+    width: 100%;
+    display: flex;
+}
+
+.contact-information,
+.contact-form {
+    flex-basis: 50%;
+}
+
+.contact-information h3 {
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--primary-colour);
+}
+
+.contact-information p {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--light-color);
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li {
+    list-style: none;
+}
+
+.social-icons li a {
+    text-decoration: none;
+    color: var(--primary-colour);
+    margin: 0 4px;
+    font-size: 32px;
+}
+
+.contact-form h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--light-color);
+    margin-bottom: 24px;
+}
+
+.name,
+.email,
+.message {
+    display: flex;
+    max-width: 472px;
+    border: none;
+    outline: none;
+    background-color: var(--low-priority);
+    border-radius: 8px;
+    margin: 16px 0;
+    padding: 19px 16px;
+}
+
+.contact-form label {
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--light-color);
+}
+
+.name input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--light-color);
+}
+
+.email input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--light-color);
+}
+
+.message textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--light-color);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark-bg-colour);
+}
+.footer-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--light-color);
+}
+.footer-contents .social-icons li a {
+    font-size: 16px;
+}
+.footer a {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--primary-colour);
+    text-decoration: none;
+    margin-top: 5px;
 }
